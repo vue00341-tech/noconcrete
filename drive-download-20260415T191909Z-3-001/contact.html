@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Eagle Concrete Coatings LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact { padding-top: 40px; }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Eagle Concrete Coatings" class="logo-img"> Eagle Concrete <span>Coatings</span></a></div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle Menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+            <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+            <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+            <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            <li><a href="contact.html" class="btn-quote" onclick="toggleMenu()">Get a Quote</a></li>
+        </ul>
+    </header>
+
+    <main class="page-spacer">
+        <section id="contact" class="contact">
+            <div class="section-header fade-in-up">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Let's Start Your Project</h2>
+            </div>
+            <div class="contact-container fade-in-up delay-1">
+                <div class="contact-form-wrap">
+                    <h3>Request a Free Estimate</h3>
+                    <form class="contact-form" onsubmit="submitForm(event)">
+                        <div class="input-group">
+                            <input type="text" placeholder="First Name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="input-group form-full">
+                            <select required>
+                                <option value="" disabled selected>Select Project Type...</option>
+                                <option value="garage">Garage Floor</option>
+                                <option value="basement">Basement</option>
+                                <option value="commercial">Commercial Space</option>
+                                <option value="outdoor">Patio / Outdoor</option>
+                            </select>
+                        </div>
+                        <div class="input-group form-full">
+                            <textarea rows="4" placeholder="Tell us about your project... (approximate square footage, current condition, etc.)"></textarea>
+                        </div>
+                        <button type="submit">Get My Free Quote</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h4>Service Area</h4>
+                            <p>All of South Metro Minnesota</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <a href="tel:9527697905">(952) 769-7905</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <a href="mailto:eagleconcretecoatingsl.l.c@gmail.com">eagleconcretecoatingsl.l.c@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 10px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px;">
+                        <h4 style="margin-bottom: 15px; color: var(--white);">Hours of Operation</h4>
+                        <p style="margin-bottom: 8px; display: flex; justify-content: space-between; font-size: 0.95rem;">
+                            <span style="color: rgba(255,255,255,0.7);">Mon - Fri:</span> 
+                            <span>7:00 AM - 8:00 PM</span>
+                        </p>
+                        <p style="margin-bottom: 8px; display: flex; justify-content: space-between; font-size: 0.95rem;">
+                            <span style="color: rgba(255,255,255,0.7);">Saturday:</span> 
+                            <span>12:00 PM - 7:00 PM</span>
+                        </p>
+                        <p style="display: flex; justify-content: space-between; color: #ff8a8a; font-size: 0.95rem;">
+                            <span>Sunday:</span> 
+                            <span>Closed</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Eagle Concrete Coatings LLC. All rights reserved. | Built professionally for local service.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

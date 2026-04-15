@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Eagle Concrete Coatings LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .services {
+            background-color: var(--white);
+        }
+
+        /* On separate page, make bg white */
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Eagle Concrete Coatings"
+                    class="logo-img"> Eagle Concrete <span>Coatings</span></a></div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle Menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+            <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+            <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+            <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            <li><a href="contact.html" class="btn-quote" onclick="toggleMenu()">Get a Quote</a></li>
+        </ul>
+    </header>
+
+    <main class="page-spacer">
+        <section id="services" class="services">
+            <div class="section-header fade-in-up">
+                <span class="section-subtitle">What We Do</span>
+                <h2 class="section-title">Our Premium Coating Systems</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in-up delay-1">
+                    <h3>Residential Garages</h3>
+                    <p>Transform worn concrete into a professional polyurea finish. Extreme chemical resistance to salt
+                        and oil, installed seamlessly in a single day.</p>
+                </div>
+                <div class="service-card fade-in-up delay-2">
+                    <h3>Patios & Staircases</h3>
+                    <p>Our UV-stable formulas mean your outdoor living spaces won't yellow in the sun. Excellent slip
+                        resistance provides maximum safety year-round.</p>
+                </div>
+                <div class="service-card fade-in-up delay-3">
+                    <h3>Commercial Coatings</h3>
+                    <p>Built for high traffic and heavy abuse. Our industrial-grade systems hide floor imperfections
+                        while delivering unparalleled strength.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="finishes" class="colors" style="background-color: var(--white);">
+            <div class="section-header fade-in-up">
+                <span class="section-subtitle">Flake Options</span>
+                <h2 class="section-title">Colors & Finishes</h2>
+                <p style="margin-top: 15px; color: var(--text-light); max-width: 600px; margin-inline: auto;">
+                    Personalize your space with our wide selection of premium color flakes. Each blend provides a
+                    uniquely beautiful texture and durable finish. Choose from our premium flake finishes: Tidal Wave,
+                    Creekbed, Morel, Domino, and more!</p>
+            </div>
+            <div class="color-grid fade-in-up delay-1">
+                <div class="color-item">
+                    <img src="images/blue heron.png" alt="Blue Heron">
+                    <h4>Blue Heron</h4>
+                </div>
+                <div class="color-item">
+                    <img src="images/cabin fever.png" alt="Cabin Fever">
+                    <h4>Cabin Fever</h4>
+                </div>
+                <div class="color-item">
+                    <img src="images/creekbed.png" alt="Creekbed">
+                    <h4>Creekbed</h4>
+                </div>
+                <div class="color-item">
+                    <img src="images/domino.png" alt="Domino">
+                    <h4>Domino</h4>
+                </div>
+                <div class="color-item">
+                    <img src="images/gravel.png" alt="Gravel">
+                    <h4>Gravel</h4>
+                </div>
+                <div class="color-item">
+                    <img src="images/kalahari.png" alt="Kalahari">
+                    <h4>Kalahari</h4>
+                </div>
+                <div class="color-item">
+                    <img src="images/morel.png" alt="Morel">
+                    <h4>Morel</h4>
+                </div>
+                <div class="color-item">
+                    <img src="images/rocky ridge.png" alt="Rocky Ridge">
+                    <h4>Rocky Ridge</h4>
+                </div>
+                <div class="color-item">
+                    <img src="images/stonehenge.png" alt="Stonehenge">
+                    <h4>Stonehenge</h4>
+                </div>
+                <div class="color-item">
+                    <img src="images/tidal wave.png" alt="Tidal Wave">
+                    <h4>Tidal Wave</h4>
+                </div>
+                <div class="color-item">
+                    <img src="images/wombat.png" alt="Wombat">
+                    <h4>Wombat</h4>
+                </div>
+                <div class="color-item">
+                    <img src="images/woodland.png" alt="Woodland">
+                    <h4>Woodland</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Eagle Concrete Coatings LLC. All rights reserved. | Built professionally for local service.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

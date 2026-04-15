@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Eagle Concrete Coatings LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: var(--navy);
+        }
+
+        .page-spacer {
+            background-color: var(--navy);
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Eagle Concrete Coatings"
+                    class="logo-img"> Eagle Concrete <span>Coatings</span></a></div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle Menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+            <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+            <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+            <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            <li><a href="contact.html" class="btn-quote" onclick="toggleMenu()">Get a Quote</a></li>
+        </ul>
+    </header>
+
+    <main class="page-spacer">
+        <section id="gallery" class="gallery">
+            <div class="section-header fade-in-up">
+                <span class="section-subtitle">Our Work</span>
+                <h2 class="section-title">Before & After Gallery</h2>
+                <p style="margin-top: 15px; color: rgba(255,255,255,0.7);">See the dramatic difference our concrete
+                    coating services make!</p>
+            </div>
+            <div class="gallery-grid fade-in-up delay-1">
+                <!-- Pair 1 -->
+                <div class="gallery-item">
+                    <img src="images/before pic garage 1.png" alt="Before Garage 1">
+                    <div class="gallery-overlay">
+                        <h4>Before</h4>
+                        <p>Residential Garage 1</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/after pic garage 1.jpg" alt="After Garage 1">
+                    <div class="gallery-overlay">
+                        <h4>After</h4>
+                        <p>Residential Garage 1</p>
+                    </div>
+                </div>
+                <!-- Pair 2 -->
+                <div class="gallery-item">
+                    <img src="images/before pic garage 2.png" alt="Before Garage 2">
+                    <div class="gallery-overlay">
+                        <h4>Before</h4>
+                        <p>Residential Garage 2</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/after pic garage 2.png" alt="After Garage 2">
+                    <div class="gallery-overlay">
+                        <h4>After</h4>
+                        <p>Residential Garage 2</p>
+                    </div>
+                </div>
+                <!-- Pair 3 -->
+                <div class="gallery-item">
+                    <img src="images/before pic garage 3.png" alt="Before Garage 3">
+                    <div class="gallery-overlay">
+                        <h4>Before</h4>
+                        <p>Residential Garage 3</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/after pic garage 3.png" alt="After Garage 3">
+                    <div class="gallery-overlay">
+                        <h4>After</h4>
+                        <p>Residential Garage 3</p>
+                    </div>
+                </div>
+                <!-- Pair 4 -->
+                <div class="gallery-item">
+                    <img src="images/before pic outside 1.png" alt="Before Outside 1">
+                    <div class="gallery-overlay">
+                        <h4>Before</h4>
+                        <p>Outdoor Space</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/after pic outside 1.png" alt="After Outside 1">
+                    <div class="gallery-overlay">
+                        <h4>After</h4>
+                        <p>Outdoor Space</p>
+                    </div>
+                </div>
+                <!-- Pair 5 -->
+                <div class="gallery-item">
+                    <img src="images/commercial before pic.jpg" alt="Before Commercial">
+                    <div class="gallery-overlay">
+                        <h4>Before</h4>
+                        <p>Commercial Space</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/commerical after pic.jpg" alt="After Commercial">
+                    <div class="gallery-overlay">
+                        <h4>After</h4>
+                        <p>Commercial Space</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Eagle Concrete Coatings LLC. All rights reserved. | Built professionally for local service.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
